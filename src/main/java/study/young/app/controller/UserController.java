@@ -17,7 +17,7 @@ public class UserController {
 	// 登录接口
 	@PostMapping("/doLogin")
 	public String doLogin(String username, String password, Model model) {
-		// 通过接收到的用户名和密码构造一个 UsernamePasswordToken 实例
+		// 通过接收到的用户名和密码构造一个 UsernamePasswordToken 实例 
 		UsernamePasswordToken token = new UsernamePasswordToken(username, password);
 		// 获取一个Subject对象
 		Subject subject = SecurityUtils.getSubject();
